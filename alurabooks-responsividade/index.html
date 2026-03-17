@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="cabeçalho__container cabeçalho__container--espaçado">
+            <input type="checkbox" id="menu" class="cabeçalho__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer cabeçalho__icone"></span>
+            </label>
+            <ul class="lista">
+                <li class="lista__titulo">Categorias</li>
+                <li class="lista__item"><a href="#" class="lista__link">Programação</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Front-end</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Infraestrutura</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Business</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Design & UX</a></li>
+            </ul>
+            <img src="./src/imgs/Logo.svg" alt="Logo AluraBooks" class="cabeçalho__icone">
+        </div>
+
+        <div class="cabeçalho__container">
+            <a href="#"><img src="./src/imgs/Favoritos.svg" alt="Meus favoritos" class="cabeçalho__icone"></a>
+            <a href="#"><img src="./src/imgs/Compras.svg" alt="Carrinho de compras" class="cabeçalho__icone"></a>
+            <a href="#"><img src="./src/imgs/Usuário.svg" alt="Meu perfil" class="cabeçalho__icone"></a>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para o seu desenvolvimento</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                    <!-- Slides -->
+                <div class="swiper-slide"><img src="./src/imgs/ApacheKafka.svg"
+                alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="./src/imgs/Liderança.svg"
+                alt="Livro sobre liderança em design da alura books"></div>
+                <div class="swiper-slide"><img src="./src/imgs/Javascript.svg"
+                alt="Livro sobre javascript assertivo da alurabooks"></div>
+                <div class="swiper-slide"><img src="./src/imgs/Guia Front-end.svg" alt="Livro Guia front end"></div>
+                <div class="swiper-slide"><img src="./src/imgs/Portugol.svg" alt="Livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="./src/imgs/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
+</html>
